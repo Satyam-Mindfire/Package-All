@@ -14,8 +14,6 @@ let package = Package(
             targets: ["MobileQuickLaunchKit"]),
     ],
     dependencies: [
-        .package(path: "./MQLCore"),
-        .package(path: "./MQLCoreUI"),
         .package(url: "https://github.com/firebase/firebase-ios-sdk.git", from: "9.0.0"),
         .package(url: "https://github.com/google/GoogleSignIn-iOS.git", from: "7.0.0"),
         // Add other dependencies as needed
@@ -26,8 +24,6 @@ let package = Package(
         .target(
             name: "MobileQuickLaunchKit",
             dependencies: [
-                "MQLCore",
-                "MQLCoreUI",
                 .product(name: "FirebaseAnalytics", package: "firebase-ios-sdk"),
                 .product(name: "GoogleSignIn", package: "GoogleSignIn-iOS"),
                 .product(name: "GoogleSignInSwift", package: "GoogleSignIn-iOS")
