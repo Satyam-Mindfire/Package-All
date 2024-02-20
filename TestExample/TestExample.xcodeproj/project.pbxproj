@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,11 @@
 		4AF360A32B846E8500E2C362 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF360A22B846E8500E2C362 /* ContentView.swift */; };
 		4AF360A52B846E8600E2C362 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF360A42B846E8600E2C362 /* Assets.xcassets */; };
 		4AF360A82B846E8600E2C362 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF360A72B846E8600E2C362 /* Preview Assets.xcassets */; };
+		4AF360B62B84720600E2C362 /* MobileQuickLaunchKit in Frameworks */ = {isa = PBXBuildFile; productRef = 4AF360B52B84720600E2C362 /* MobileQuickLaunchKit */; };
+		4AF360B82B8472EA00E2C362 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF360B72B8472EA00E2C362 /* MainView.swift */; };
+		4AF360BA2B84730700E2C362 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF360B92B84730700E2C362 /* HomeView.swift */; };
+		4AF360BC2B84733400E2C362 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AF360BB2B84733400E2C362 /* ThemeManager.swift */; };
+		4AF360BE2B84775500E2C362 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4AF360BD2B84775500E2C362 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		4AF360A22B846E8500E2C362 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4AF360A42B846E8600E2C362 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4AF360A72B846E8600E2C362 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4AF360B72B8472EA00E2C362 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4AF360B92B84730700E2C362 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4AF360BB2B84733400E2C362 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		4AF360BD2B84775500E2C362 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../OpenSource SDK/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		4AF360BF2B84779100E2C362 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AF360B62B84720600E2C362 /* MobileQuickLaunchKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,6 +46,7 @@
 		4AF360942B846E8500E2C362 = {
 			isa = PBXGroup;
 			children = (
+				4AF360BD2B84775500E2C362 /* GoogleService-Info.plist */,
 				4AF3609F2B846E8500E2C362 /* TestExample */,
 				4AF3609E2B846E8500E2C362 /* Products */,
 			);
@@ -51,10 +63,14 @@
 		4AF3609F2B846E8500E2C362 /* TestExample */ = {
 			isa = PBXGroup;
 			children = (
+				4AF360BF2B84779100E2C362 /* Info.plist */,
 				4AF360A02B846E8500E2C362 /* TestExampleApp.swift */,
 				4AF360A22B846E8500E2C362 /* ContentView.swift */,
 				4AF360A42B846E8600E2C362 /* Assets.xcassets */,
 				4AF360A62B846E8600E2C362 /* Preview Content */,
+				4AF360B72B8472EA00E2C362 /* MainView.swift */,
+				4AF360B92B84730700E2C362 /* HomeView.swift */,
+				4AF360BB2B84733400E2C362 /* ThemeManager.swift */,
 			);
 			path = TestExample;
 			sourceTree = "<group>";
@@ -83,6 +99,9 @@
 			dependencies = (
 			);
 			name = TestExample;
+			packageProductDependencies = (
+				4AF360B52B84720600E2C362 /* MobileQuickLaunchKit */,
+			);
 			productName = TestExample;
 			productReference = 4AF3609D2B846E8500E2C362 /* TestExample.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 4AF360942B846E8500E2C362;
+			packageReferences = (
+				4AF360B42B84720600E2C362 /* XCLocalSwiftPackageReference ".." */,
+			);
 			productRefGroup = 4AF3609E2B846E8500E2C362 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +149,7 @@
 			files = (
 				4AF360A82B846E8600E2C362 /* Preview Assets.xcassets in Resources */,
 				4AF360A52B846E8600E2C362 /* Assets.xcassets in Resources */,
+				4AF360BE2B84775500E2C362 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +161,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4AF360A32B846E8500E2C362 /* ContentView.swift in Sources */,
+				4AF360BA2B84730700E2C362 /* HomeView.swift in Sources */,
+				4AF360BC2B84733400E2C362 /* ThemeManager.swift in Sources */,
+				4AF360B82B8472EA00E2C362 /* MainView.swift in Sources */,
 				4AF360A12B846E8500E2C362 /* TestExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +300,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +329,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"TestExample/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TestExample/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -342,6 +370,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		4AF360B42B84720600E2C362 /* XCLocalSwiftPackageReference ".." */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ..;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AF360B52B84720600E2C362 /* MobileQuickLaunchKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MobileQuickLaunchKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4AF360952B846E8500E2C362 /* Project object */;
 }
